@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.svh-100 {
+  height: 100svh;
+}
+
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: sans-serif;
+  height: 100svh;
+}
+
+h1 {
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.color-select, .shape-select {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  padding-left: 10px;
+  background-color: #313131;
+}
+
+.color-select:hover, .shape-select:hover {
+  cursor: pointer;
+}
+
+.create {
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f90;
+  color: #fff;
+}
+
+/* Watch a few YT tutorials on CSS Grid to learn some new stuff*/
+.box {
+  width: 720px; 
+  height: 364.99px;
+  padding: 10px;
+  background-color: #313131;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  grid-auto-rows: 108.33px; 
+  gap: 10px; 
+  z-index: -5;
+}
+
+.shape {
+  width: 100%; 
+  height: 100%; 
+}
+
+.shape-info {
+  margin-top: 10px;
+  font-variant: tabular-nums;
+}
